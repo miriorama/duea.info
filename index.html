@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duea</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+    </header>
+
+    <header class="header-secondary">
+        <!--<img class="header-logo" src="img/logo-duea.svg" alt="">-->
+        <a href="https://www.facebook.com/DUEACesano" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/duea.cesano/ " target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/@dueacesano3118" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://spotify.link/tPNCoBkLFDb" target="_blank" rel="noopener noreferrer">Spotify</a>
+        <a href="mailto:duea.cesano@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="intro-img" style="background-image: url(img/intro.jpg);"></div>
+            <div class="intro-content">
+                <img class="intro-logo" src="img/logo-duea.svg" alt="">
+                <div class="intro-text">
+                    Un ruscello vivo d’estate e silenzioso d’inverno<br>
+                </div>
+                <div class="player">
+                    <div class="player-play" onclick="DUEA.play()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </div>
+                    <div class="player-pause" onclick="DUEA.pause()" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner" onclick="UTIL.scrollTo('.box-list')">
+                <div class="banner-content banner-content-1"><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span></div>
+                <div class="banner-content banner-content-2"><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span><span>SOSTIENICI</span></div>
+            </div>
+        </section>
+
+
+        <div class="box-list">
+            <div class="box box-double box-special">
+                <div class="box-img parallax" style="background-image: url(img/abbraccio.jpg);"></div>
+            </div>
+            <div class="box box-double box-special">
+                <div class="box-title">SOSTIENICI</div>
+                <div class="box-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis dolores asperiores laudantium harum atque quisquam fugiat nostrum tenetur est reiciendis maxime tempora voluptatum modi, commodi quis aliquid quibusdam praesentium!
+                    <br><br><a href="" class="btn btn-negative btn-campagna">VAI ALLA CAMPAGNA<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg></a>
+                </div>
+            </div>
+
+            <div class="box box-no-padding">
+                <img src="img/linee-organetto.svg" alt="">
+            </div>
+            <div class="box box-background">
+                <div class="box-img parallax" style="background-image: url(img/foto-1.jpg);"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">BIOGRAFIA</div>
+                <div class="box-content">
+                    DUEA è un ruscello vivo d’estate e silenzioso d’inverno, scorre vicino alla casa dove Chiara e Sara sono cresciute, a Sampeyre in Valle Varaita. Questa valle affacciata sul Monviso è ricca di tradizioni che risuonano nelle melodie, nei ritmi e nelle danze della musica popolare, un elemento indispensabile durante le feste.
+                    <br>La musica di DUEA affonda le radici nelle melodie tradizionali, ma prende il largo con brani originali per due violini, contaminati dal folk internazionale e un pizzico di elettronica.
+                </div>
+            </div>
+            <div class="box">
+            </div>
+
+            <div class="box box-background">
+                <div class="box-img parallax" style="background-image: url(img/foto-5.jpg);"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">CONCERTI 2024</div>
+                <div class="box-content">
+                    <ul>
+                        <li><b>11 Maggio</b> Casa del fiume CUNEO</li>
+                        <li><b>24 Maggio</b> Il Tesoriere BORGO SAN DALMAZZO</li>
+                        <li><b>1 Giugno</b> Sgrana e Traballa CPA FIRENZE</li>
+                        <li><b>22 Giugno</b> Festa Balfolk MOTTA DI LIVENZA</li>
+                        <li><b>10 Agosto</b> Notte di San Lorenzo VARIGOTTI</li>
+                        <li><b>18 Agosto</b> PURBECK VALLEY FOLK FESTIVAL - UK</li>
+                        <li><b>14 Settembre</b> VERRIERES EN FOREZ - FR</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box box-background box-cross">
+                <div class="box-img parallax" style="background-image: url(img/abbraccio-diagonale.jpg);"></div>
+            </div>
+            <div class="box box-no-padding">
+                <img src="img/linee-violino.svg" alt="">
+            </div>
+
+            <div class="box box-ballo">
+                <div class="scope-container">
+                    <div class="scope">
+                        <span style="--i:1;"><img src="img/ballo-0.jpg"></span>
+                        <span style="--i:2;"><img src="img/ballo-1.jpg"></span>
+                        <span style="--i:3;"><img src="img/ballo-2.jpg"></span>
+                        <span style="--i:4;"><img src="img/ballo-3.jpg"></span>
+                        <span style="--i:5;"><img src="img/ballo-4.jpg"></span>
+                        <span style="--i:6;"><img src="img/ballo-5.jpg"></span>
+                        <span style="--i:7;"><img src="img/ballo-6.jpg"></span>
+                        <span style="--i:8;"><img src="img/ballo-7.jpg"></span>
+                        <span style="--i:9;"><img src="img/ballo-8.jpg"></span>
+                        <span style="--i:10;"><img src="img/ballo-9.jpg"></span>
+                        <span style="--i:11;"><img src="img/ballo-10.jpg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-link">
+                <a href="https://www.facebook.com/DUEACesano" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/duea.cesano/ " target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.youtube.com/@dueacesano3118" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://spotify.link/tPNCoBkLFDb" target="_blank" rel="noopener noreferrer">Spotify</a>
+                <a href="mailto:duea.cesano@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+
+                <a href="https://www.facebook.com/DUEACesano" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/duea.cesano/ " target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.youtube.com/@dueacesano3118" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://spotify.link/tPNCoBkLFDb" target="_blank" rel="noopener noreferrer">Spotify</a>
+                <a href="mailto:duea.cesano@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/ripples.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
