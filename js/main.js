@@ -145,4 +145,4 @@ document.addEventListener('DOMContentLoaded', function() {
   options = Object.assign({}, Ripples.DEFAULTS, options);
   let ripple = new Ripples(document.querySelector('.intro-img'),options);
 
-  window.onresize = function(){ location.reload(); }
+  //window.onresize = function(){ location.reload(); }
