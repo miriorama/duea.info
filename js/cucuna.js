@@ -13,7 +13,6 @@ var CUCUNA = (function(){
             'espirit-libre': {id:'espirit-libre',title:'Esprit libre', lato:'b'},
             'aura': {id:'aura',title:'Aura', lato:'b'},
             'bobo-remix': {id:'bobo-remix',title:'Bobò - Madaski Remix', lato:'b'},
-
         }
     };
     let player = null;

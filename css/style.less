@@ -596,6 +596,12 @@ img {
             width: 100%;
             max-width: 600px;
             margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .lato{
+            width: calc(50% - 5%);
+            min-width: 270px;
         }
 
         .cucuna-track{
@@ -664,14 +670,24 @@ img {
         font-weight: bold;
         border-radius: 32px 32px 0 0;
 
-        .player-timing{
+        .player-content{
             display: flex;
-            gap: 4px;
-            align-items: center;
-            font-family: monospace;
-            font-weight: normal;
-            font-size: .8rem;
+            flex-direction: column;
+
+            .player-title{
+                margin-bottom: 4px;
+            }
+
+            .player-timing{
+                display: flex;
+                gap: 4px;
+                align-items: center;
+                font-family: monospace;
+                font-weight: normal;
+                font-size: .8rem;
+            }
         }
+
         .player-icon{
             cursor: pointer;
 
