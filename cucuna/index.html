@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cucunà - Duea</title>
+
+    <meta name="description" content="Cucunà - Duea" />
+    <meta property="og:title" content="Cucunà - Duea" />
+    <meta property="og:site_name" content="Cucunà - Duea" />
+    <meta property="og:url" content="https://podcastmiseria.it" />
+    <meta property="og:description" content="Duea - Cucunà" />
+    <meta property="og:image" content="https://podcastmiseria.it/img/cover.jpg" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="../css/style.css?v=1">
+</head>
+<body class="cucuna">
+    <div class="container">
+        <div class="cover-container">
+            <div class="cover">
+                <img src="../img/cover.jpg" alt="Cover">
+                <div class="label spin">
+                    <img src="../img/lato-a.png">
+                </div>
+            </div>
+            <div class="back">
+                <div class="cucuna-track-list">
+                    <img src="../img/title/lato-a.svg" alt="">
+                    <div class="cucuna-track" data-track="cucuna" onclick="CUCUNA.play('cucuna')">
+                        <img src="../img/title/cucuna.svg" alt="">
+                    </div>
+                    <div class="cucuna-track" data-track="bardo" onclick="CUCUNA.play('bardo')">
+                        <img src="../img/title/bardo.svg" alt="">
+                    </div>
+                    <div class="cucuna-track" data-track="mazurka" onclick="CUCUNA.play('mazurka')">
+                        <img src="../img/title/mazurka.svg" alt="">
+                    </div>
+                    <div class="cucuna-track" data-track="la-marcia-di-biule" onclick="CUCUNA.play('la-marcia-di-biule')">
+                        <img src="../img/title/marcha.svg" alt="">
+                    </div>
+                    <div class="cucuna-track" data-track="bobo" onclick="CUCUNA.play('bobo')">
+                        <img src="../img/title/bobo.svg" alt="">
+                    </div>
+
+                    <br>
+                    <img src="../img/title/lato-b.svg" alt="">
+                    <div class="cucuna-track" data-track="margot" onclick="CUCUNA.play('margot')">
+                        <img src="../img/title/margot.svg" alt="">
+                    </div>
+                    <div class="cucuna-track" data-track="rigolet" onclick="CUCUNA.play('rigolet')">
+                        <img src="../img/title/rigolet.svg" alt="">
+                    </div>
+                    <div class="cucuna-track" data-track="espirit-libre" onclick="CUCUNA.play('espirit-libre')">
+                        <img src="../img/title/esprit.svg" alt="">
+                    </div>
+                    <div class="cucuna-track" data-track="aura" onclick="CUCUNA.play('aura')">
+                        <img src="../img/title/aura.svg" alt="">
+                    </div>
+                    <div class="cucuna-track" data-track="bobo-remix" onclick="CUCUNA.play('bobo-remix')">
+                        <img src="../img/title/bobo-remix.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="credits">
+            <b>DUEA</b> Sara Cesano: violino / Chiara Cesano: violino, viola, organetto, ton ton
+            <span><b>Cristina Levet</b> voce in Rigolet</span>
+            <span><b>Registrato</b> nell'aprile 2024 a Cuneo - Piave 34 da Fabrizio Barale</span>
+            <span><b>Mix</b> di Roby Avena</span>
+            <span><b>Master</b> di Fabrizio Barale</span>
+            <span><b>Produzione</b> di Roby Avena e DUEA</span>
+            <span><b>Illustrazioni e grafica</b> di Sonia Gavazza</span>
+            <span><b>Fotografie</b> di Simona Marino</span>
+            <span><b>Un ringraziamento speciale a</b> Agnese, Cinzia, Cristina, Daniele, Edith, Letizia, Paolo, Roby, Sergio, Simona, Sonia, Tiziana e a tutte le persone che si sono prese cura di Cucunà prima che vedesse la luce.</span>
+
+            <div class="cta">
+                <br><br><a class="btn btn-download" href="../data/cucuna-mp3.zip" download>DOWNLOAD MP3</a>
+            </div>
+        </div>
+
+        <audio id="audio" src="" onloadedmetadata="CUCUNA.loadedMetadata()" ontimeupdate="CUCUNA.timeUpdate()"></audio>
+
+
+
+        <div class="player">
+            <div class="player-icon">
+                <div class="player-play" onclick="CUCUNA.play()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                    </svg>
+                </div>
+                <div class="player-pause" onclick="CUCUNA.pause()" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="player-title">
+                Lato A - Cucunà
+            </div>
+            <div class="player-timing">
+                <div class="player-current-time">
+                    00:00
+                </div> /
+                <div class="player-duration">
+                    02:40
+                </div>
+            </div>
+            <div class="player-icon-list">
+                <div class="player-icon-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/cucuna.min.js?v=1"></script>
+</body>
+</html>
