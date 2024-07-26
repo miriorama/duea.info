@@ -15,8 +15,6 @@ var CUCUNA = (function(){
             'bobo-remix': {id:'bobo-remix',title:'Bobò - Madaski Remix', lato:'b'},
         }
     };
-    let player = null;
-
 
     cucuna.init = function(){
         cucuna.player = document.querySelector('#audio');
@@ -29,7 +27,7 @@ var CUCUNA = (function(){
 
         let $playerTitle = document.querySelector('.player-title');
         let currentTrack = document.querySelector('.player-title');
-        $playerTitle.innerHTML = 'Lato ' + cucuna.currentTrack.lato + ' - ' + cucuna.currentTrack.title;
+        $playerTitle.innerHTML = 'Lato ' + cucuna.currentTrack.lato.toUpperCase() + ' - ' + cucuna.currentTrack.title;
 
         let $playerCurrentTime = document.querySelector('.player-current-time');
         $playerCurrentTime.innerHTML = UTIL.convertTime(cucuna.player.currentTime);
