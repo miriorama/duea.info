@@ -48,7 +48,16 @@ h1,h2,h3,h4,p,ul,ol {
 }
 
 ul{
-    list-style-type: none
+    list-style-type: none;
+
+    &.list{
+        list-style-type:disc;
+        margin: 16px 0;
+
+        li{
+            margin-left: 16px;
+        }
+    }
 }
 
 img {
@@ -262,7 +271,7 @@ img {
         gap: 80px;
         animation: marquee 240s linear infinite;
         overflow: hidden;
-        letter-spacing: 16px;
+        //letter-spacing: 16px;
     }
     .banner-content-1{
 
@@ -336,10 +345,18 @@ img {
             transition: border-radius .6s, background-size .6s;
         }
 
+        .box-pretitle{
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-align: left;
+            align-self: flex-start;
+        }
+
         .box-title{
             font-weight: bold;
             font-size: 1.2rem;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
             text-align: left;
             align-self: flex-start;
         }
@@ -380,6 +397,10 @@ img {
             }
             .btn-campagna{
                 margin-top: 8px;
+            }
+            a{
+                color: #EDE9D9;
+
             }
         }
         &.box-double{
