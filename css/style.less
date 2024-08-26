@@ -79,7 +79,7 @@ img {
     transition: .3s;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 1rem;
 
     svg{
@@ -607,6 +607,11 @@ img {
         .cucuna-track{
             cursor: pointer;
             position: relative;
+            user-select: none;
+
+            img{
+                user-select: none;
+            }
 
             &.current:before{
                 content: '•';
@@ -623,7 +628,7 @@ img {
 
         img{
             height: 32px;
-            width: max-content;
+            //width: max-content;
         }
 
     }
@@ -695,6 +700,28 @@ img {
                 width: 32px;
             }
 
+        }
+    }
+
+    .footer{
+        width: 100%;
+        color: #85AFBF;
+        background-color: transparent;
+        padding: 32px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(133, 175, 191, 0.5);
+        margin-top: 24px;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #85AFBF;
+            font-size: .8rem;
+            font-weight: 400;
         }
     }
 }
